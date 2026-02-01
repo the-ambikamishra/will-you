@@ -124,11 +124,4 @@ The template is configured for deployment on Cloudflare:
 npm run build
 ```
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Run tests and linting
-5. Submit a pull request
 
