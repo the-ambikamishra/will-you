@@ -108,7 +108,6 @@ export default function HomePage() {
 
   return (
     <div className="relative min-h-screen w-full overflow-clip font-sans selection:bg-pink-200 selection:text-pink-900">
-      
       {/* 1. Background Layer */}
       <div className="fixed inset-0 z-[-1]">
         <Image
@@ -120,10 +119,8 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-pink-50/50 to-rose-100/60 backdrop-blur-[2px]" />
       </div>
-
       {/* 2. Atmospheric Motion Layer */}
       <FloatingHeartsBackground />
-
       {/* 3. Main Content Layer */}
       <main 
         ref={containerRef}
@@ -283,10 +280,8 @@ export default function HomePage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.6 }}
-                className="font-paragraph text-xl md:text-2xl text-gray-700 mb-12 max-w-lg"
-              >
-                Best decision you've made all day. Get ready for the best Valentine's Day ever!
-              </motion.p>
+                className="font-paragraph text-xl md:text-2xl mb-12 max-w-lg text-[#c679acff]"
+              >Best decision you've made all day.</motion.p>
 
               {/* Reset Action */}
               <motion.div
@@ -307,14 +302,12 @@ export default function HomePage() {
           )}
         </AnimatePresence>
       </main>
-
       {/* 4. Footer (Minimal & Themed) */}
       <footer className="fixed bottom-0 w-full py-4 text-center z-20 pointer-events-none">
         <p className="font-paragraph text-sm text-pink-400/80 font-medium">
           Made with ❤️ for you
         </p>
       </footer>
-
       {/* 5. Custom Styles for specific animations */}
       <style>{`
         @keyframes float {
